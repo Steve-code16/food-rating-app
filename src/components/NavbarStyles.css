@@ -2,7 +2,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #aaa;
+  background: #242424;
   /* background: #1b2430; */
   padding: 20px 80px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
@@ -61,6 +61,9 @@ nav {
 }
 
 @media screen and (max-width: 769px) {
+  nav {
+    padding: 20px 40px;
+  }
   .navbar {
     display: flex;
     flex-direction: column;
