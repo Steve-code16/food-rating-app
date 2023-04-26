@@ -6,7 +6,7 @@ function Layout() {
   return (
     <div>
       <Navbar />
-      <div style={{ height: "100vh" }}></div>
+      <div style={{ height: "65vh" }}></div>
       <Footer />
     </div>
   );
