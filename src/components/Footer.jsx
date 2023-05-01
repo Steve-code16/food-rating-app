@@ -130,7 +130,7 @@ function Footer() {
 
         <div className="right-col">
           <h2>Our Newsletter</h2>
-          <div className="border"></div>
+          <div className="acc-border"></div>
           <p>Enter your Email to get our news and updates</p>
           <form className="newsletter-form">
             <input

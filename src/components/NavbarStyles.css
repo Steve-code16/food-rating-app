@@ -58,6 +58,7 @@ nav {
 .mobile i {
   color: #fff;
   align-items: center;
+  padding: 10px;
 }
 
 @media screen and (max-width: 769px) {
@@ -70,11 +71,11 @@ nav {
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 90px;
+    top: 84px;
     right: -300px;
     width: 300px;
     height: 100vh;
-    background: #2a3239;
+    background: #242424;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
