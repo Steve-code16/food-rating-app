@@ -120,6 +120,14 @@ function Navbar() {
             <li>
               <a href="/rate">Rate</a>
             </li>
+            <li>
+              <a
+                href="/auth/login"
+                className="bg-info px-4 py-2 text-light rounded"
+              >
+                Join now
+              </a>
+            </li>
           </ul>
         </div>
 
