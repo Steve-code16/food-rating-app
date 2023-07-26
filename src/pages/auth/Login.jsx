@@ -35,11 +35,11 @@ function Login() {
       <div>
         <h3>Login</h3>
         <button onClick={GoogleLogin}>
-          <i className="fa fa-google" aria-hidden="true"></i> Sign in with
+          <i className="fab fa-google" aria-hidden="true"></i> Sign in with
           google
         </button>
         <button>
-          <i className="fa fa-facebook" aria-hidden="true"></i> Sign in with
+          <i className="fab fa-facebook-f" aria-hidden="true"></i> Sign in with
           facebook
         </button>
       </div>
