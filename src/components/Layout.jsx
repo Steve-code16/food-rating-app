@@ -9,9 +9,9 @@ function Layout({ children }) {
     <div>
       <Navbar />
       <main>{children}</main>
-      <Login />
-      <Home />
-      <div style={{ height: "65vh" }}></div>
+      {/* <Login />*/}
+      {/* <Home /> */}
+      {/* <div style={{ height: "65vh" }}></div> */}
       <Footer />
     </div>
   );
