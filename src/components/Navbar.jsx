@@ -7,7 +7,7 @@ function Navbar() {
   const [navToggle, setNavToggle] = useState(false);
 
   return (
-    <div>
+    <div className="nav-container">
       <nav>
         <Link to="/" className="logo">
           <svg
