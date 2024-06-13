@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./NavbarStyles.css";
 
@@ -6,9 +7,9 @@ function Navbar() {
   const [navToggle, setNavToggle] = useState(false);
 
   return (
-    <div>
+    <div className="nav-container">
       <nav>
-        <a href="/" className="logo">
+        <Link to="/" className="logo">
           <svg
             id="logo-74"
             width="70"
@@ -106,19 +107,35 @@ function Navbar() {
               stopColor="#17cf97"
             ></path>
           </svg>
-        </a>
+        </Link>
         <div>
           <ul className={navToggle ? "navbar navbarActive" : "navbar"}>
             <li>
-              <a href="/" className="active">
+              <Link
+                onClick={() => setNavToggle(!navToggle)}
+                to="/"
+                className="active"
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link onClick={() => setNavToggle(!navToggle)} to="/about">
+                About
+              </Link>
             </li>
             <li>
-              <a href="/rate">Rate</a>
+              <Link onClick={() => setNavToggle(!navToggle)} to="/rate">
+                Rate
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/auth/login"
+                className="bg-info px-4 py-2 text-light rounded"
+              >
+                Join now
+              </Link>
             </li>
           </ul>
         </div>

@@ -1,10 +1,18 @@
+.nav-container {
+  background: #242424;
+  color: #f1f1f1;
+  padding: 20px 0;
+}
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #242424;
+  max-width: 85%;
+  margin: auto;
   /* background: #1b2430; */
-  padding: 20px 80px;
+  padding: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
@@ -24,6 +32,10 @@ nav {
   list-style: none;
   padding: 0 20px;
   position: relative;
+}
+
+.navbar li:last-child {
+  padding-right: 0;
 }
 
 .navbar li a {
@@ -78,11 +90,13 @@ nav {
     background: #242424;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 40px 0 0 10px;
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
+    z-index: 10;
   }
 
   .navbarActive {
     right: 0;
+    z-index: 10;
   }
 
   .mobile {

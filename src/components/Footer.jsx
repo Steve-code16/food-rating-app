@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./FooterStyles.css";
 
 function Footer() {
@@ -6,7 +7,7 @@ function Footer() {
     <footer>
       <div className="footer-container">
         <div className="left-col">
-          <a href="/" className="logo">
+          <Link to="/" className="logo">
             <svg
               id="logo-74"
               width="70"
@@ -104,7 +105,7 @@ function Footer() {
                 stopColor="#17cf97"
               ></path>
             </svg>
-          </a>
+          </Link>
           <div className="social-media">
             <a href="#">
               <i className="fab fa-facebook-f"></i>
