@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./NavbarStyles.css";
 
@@ -7,6 +8,7 @@ function Navbar() {
   const [navToggle, setNavToggle] = useState(false);
 
   return (
+    <div className="nav-container">
     <div className="nav-container">
       <nav>
         <Link to="/" className="logo">
@@ -116,7 +118,18 @@ function Navbar() {
                 to="/"
                 className="active"
               >
+              <Link
+                onClick={() => setNavToggle(!navToggle)}
+                to="/"
+                className="active"
+              >
                 Home
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => setNavToggle(!navToggle)} to="/about">
+                About
+              </Link>
               </Link>
             </li>
             <li>
@@ -128,8 +141,17 @@ function Navbar() {
               <Link onClick={() => setNavToggle(!navToggle)} to="/rate">
                 Rate
               </Link>
+              <Link onClick={() => setNavToggle(!navToggle)} to="/rate">
+                Rate
+              </Link>
             </li>
             <li>
+              <Link
+                href="/auth/login"
+                className="bg-info px-4 py-2 text-light rounded"
+              >
+                Join now
+              </Link>
               <Link
                 href="/auth/login"
                 className="bg-info px-4 py-2 text-light rounded"
